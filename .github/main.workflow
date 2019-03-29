@@ -1,6 +1,6 @@
 workflow "New workflow" {
   resolves = ["HTTP client"]
-  on = "schedule(*/10 * * * *)"
+  on = "push"
 }
 
 action "HTTP client" {
